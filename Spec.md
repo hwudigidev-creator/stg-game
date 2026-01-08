@@ -1,6 +1,13 @@
 # STG Game - 開發規格與版本進程
 
 ## 版本編號規則
+- 永遠以繁體中文交流
+- 遵循KISS原則做程式開發
+- 遵循KISS原則做程式開發
+
+---
+
+## 版本編號規則
 - `v0.X.0` = 主要功能里程碑
 - `v0.X.Ya` = 功能迭代 (a = alpha)
 - `v0.X.Yb` = 修復/優化 (b = beta)
@@ -399,39 +406,42 @@ git push origin main
 ## v0.4.0 - 怪物系統
 
 ### 必要項目
+- [ ] 角色容器 (比角色高)
 - [ ] MonsterSystem 類別
 - [ ] 怪物定義檔 (JSON)
 - [ ] 怪物生成機制
-- [ ] 怪物 AI (追蹤玩家)
 - [ ] 怪物碰撞檢測
 - [ ] 怪物血量/死亡
 - [ ] 經驗值系統
+- [ ] 物件池 (Object Pool)
+- [ ] 視野外剔除
+- [ ] RenderTexture 優化
+- [ ] iOS WebGL 相容性
+- [ ] 記憶體管理
 
 ---
 
 ## v0.5.0 - 彈幕&技能系統
 
 ### 必要項目
+- [ ] 彈幕技能容器 (比角色高)
 - [ ] SkillSystem 類別
 - [ ] 技能定義檔
 - [ ] 技能冷卻機制
 - [ ] 技能傷害計算
 - [ ] 技能視覺特效
-- [ ] 技能欄 UI
+- [ ] 物件池 (Object Pool)
+- [ ] 視野外剔除
+- [ ] RenderTexture 優化
+- [ ] iOS WebGL 相容性
+- [ ] 記憶體管理
 
 ---
 
-## v0.6.0 - 技能與狀態效果
+## v0.6.0 - UI 系統
 
 ### 必要項目
-- [ ] SkillExecutor 類別
-- [ ] 技能升級系統
-
----
-
-## v0.7.0 - UI 系統
-
-### 必要項目
+- [ ] 介面容器 (最上層覆蓋)
 - [ ] HP/護盾/經驗條
 - [ ] 等級顯示
 - [ ] 技能欄圖示
@@ -441,7 +451,7 @@ git push origin main
 
 ---
 
-## v0.8.0 - 音效系統
+## v0.7.0 - 音效系統
 
 ### 必要項目
 - [ ] SoundManager 類別
@@ -450,17 +460,6 @@ git push origin main
 - [ ] 打擊音效 (normal/crit/skill)
 - [ ] 防爆音機制 (minInterval)
 - [ ] 音量控制
-
----
-
-## v0.9.0 - 難度與遊戲模式
-
-### 必要項目
-- [ ] 物件池 (Object Pool)
-- [ ] 視野外剔除
-- [ ] RenderTexture 優化
-- [ ] iOS WebGL 相容性
-- [ ] 記憶體管理
 
 ---
 
@@ -488,7 +487,6 @@ git push origin main
 |------|------|
 | `MonsterSystem.ts` | 怪物管理 |
 | `SkillSystem.ts` | 技能定義與管理 |
-| `SkillExecutor.ts` | 技能執行邏輯 |
 | `SoundManager.ts` | 音效管理 |
 
 ---
